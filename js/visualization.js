@@ -3,9 +3,13 @@
     {
       //  console.log("germlinelength "+germlinearray[]);
       //  console.log("affectedlength "+affectedlength);
+
+    console.log("came here");
     var lengthofxaxis;
     if(affectedlength!=germlinelength)
     {
+        console.log("affectedlength "+affectedlength);
+        console.log("germlinelength "+germlinelength);
         alert("lenth of the sequences must be same");
     }
     else
@@ -253,7 +257,9 @@
                 //.attr("class", function(e) { return "letter-" + e.letter; } )
                  .style("fill", function(e) { //console.log(e.letter);
                                                      var index =e.letter.charCodeAt()-65;;
-                                                    // console.log(index) ;
+                                                     console.log(index) ;
+                                                     if(index<0)
+                                                        return 0;
                                                      return ""+color[index].value+"" ;      
                                  } )
                 .style( "text-anchor", "middle" )

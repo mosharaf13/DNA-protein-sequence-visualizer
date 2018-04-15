@@ -349,6 +349,8 @@
                        //console.log(bitcalc);
                        //console.log(rangeend);
                        var Ii;
+
+                       console.log("came here");
                  for(var i=0;i<affectedlength;i++) 
                 {
                         var sum=0;
@@ -390,10 +392,12 @@
                      affectedarray[j][mainacid]=0;
                 }
                 console.log(germlinearray[j][1]);
+                //console.log("came here");
                 //console.log(germlinearray[j][1]);
             }
-             var rangedarray=affectedarray.slice(rangestart,rangeend);
-            //visualization(affectedlength,affectedarray,germlinelength,germlinearray,numberofpatients);
+            
+            var rangedarray=affectedarray.slice(rangestart,rangeend);
+            visualization(affectedlength,affectedarray,germlinelength,germlinearray,numberofpatients);
                         //console.log(germlinearray);
             //is the git working
         };
